@@ -15,7 +15,13 @@ class Calculator{
     private static int Multiplication(int n1 , int n2 , int n3)
     {
         return n1 * n2 * n3 ;
+    }  
+
+    private static int Division(int n1 , int n2 , int n3)
+    {
+        return ( (n1 / n2) / n3 ) ;
     } 
+
 
     public static void main(String[] args) {
         
@@ -36,7 +42,11 @@ class Calculator{
 
          int MultiplicationAnswer = Multiplication(num1 , num2, num3);
 
-         System.out.println("Multiplication of Number is :"+ MultiplicationAnswer);
+         System.out.println("Multiplication of Number is :"+ MultiplicationAnswer); 
+
+         int DivisionAnswer = Division(num1 , num2, num3);
+
+         System.out.println("Division of Number is :"+ DivisionAnswer);
 
     }
 }
